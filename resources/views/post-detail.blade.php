@@ -801,7 +801,7 @@
     $.getJSON("https://jsonplaceholder.typicode.com/posts", function (data) {
         let string = '';
         data.slice(-5).forEach(function (item) {
-            string += `<div class="d-flex py-2"><img src="https://picsum.photos/75/75?random=1" class="img-fluid responsive" alt=""><div class="stix ml-2"><p class="mb-0"><b>${item.title}</b></p> <p class="lightgrey smaller"><i>O5 December, 2016</i></p></div></div>`
+            string += `<div class="d-flex py-2"><img src="https://picsum.photos/75/75?random=1" class="img-fluid" alt=""><div class="stix ml-2"><p class="mb-0"><b>${item.title}</b></p> <p class="lightgrey smaller"><i>O5 December, 2016</i></p></div></div>`
         });
         $("#latestPosts").append(string);
     });
